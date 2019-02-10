@@ -1,8 +1,8 @@
 let x = 50;
 let y = 50;
 
-let xSpeed = 3;
-let ySpeed = 3;
+let xSpeed;
+let ySpeed;
 
 let box;
 
@@ -32,6 +32,9 @@ function setup() {
     starsX[i] = random(0,windowWidth);
     starsY[i] = random(0,windowHeight);
   }
+
+  xSpeed = windowWidth/300;
+  ySpeed = windowHeight/300;
 }
 
 function draw() {
