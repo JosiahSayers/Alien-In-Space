@@ -22,15 +22,15 @@ let starsX = [];
 let starsY = [];
 
 function setup() {
-  createCanvas(960, 720);
+  createCanvas(windowWidth, windowHeight);
   randomize();
   img = loadImage('alien.png');
   img2 = loadImage('alienTongue.png');
   ornery = false;
 
   for(let i=0; i<1000; i++){
-    starsX[i] = random(0,960);
-    starsY[i] = random(0,720);
+    starsX[i] = random(0,windowWidth);
+    starsY[i] = random(0,windowHeight);
   }
 }
 
